@@ -9,8 +9,8 @@ running = False  # Global variable to control face recognition process
 
 # Telegram Bot Function to send message with more detailed response
 def send_telegram_message(chat_id, message):
-    bot_token = '7814258804:AAHiHBFbBPiYhEGHU3JigdpA3ezyd6yokdI'  # Replace with your bot's token
-    url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+    bot_token = ''  # Replace with your bot's token
+    url = ""
     payload = {'chat_id': chat_id, 'text': message}
 
     try:
@@ -47,19 +47,19 @@ def markAttendance(name):
 
         if name == "ZEYAD TAREK":
             message = "Hi Zeyad, Your Attendance in DSP lecture has been marked."
-            send_telegram_message('5739369474', message)
+            send_telegram_message('', message)
         elif name == "SARA HESHAM":
             message = "Hi Sara, Your Attendance in DSP lecture has been marked."
-            send_telegram_message('748093739', message)
+            send_telegram_message('', message)
         elif name == "AHMED SIEF ELESLAM":
             message = "Hi Ahmed, Your Attendance in DSP lecture has been marked."
-            send_telegram_message('1621960340', message)
+            send_telegram_message('', message)
         elif name == "AHMED MOHAMED SALAH":
             message = "Hi Ahmed, Your Attendance in DSP lecture has been marked."
-            send_telegram_message('1401565913', message)
+            send_telegram_message('', message)
         elif name == "ARWA SAAD":
             message = "Hi Arwa, Your Attendance in DSP lecture has been marked."
-            send_telegram_message('1131819689', message)
+            send_telegram_message('', message)
 
         recorded_students[name] = dateString
 
