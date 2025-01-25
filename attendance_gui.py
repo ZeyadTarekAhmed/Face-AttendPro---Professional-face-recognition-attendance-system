@@ -34,12 +34,12 @@ def toggle_recognition():
 def send_email():
     try:
         # Email settings
-        sender_email = "ahmedsiefeleslam22@gmail.com"  # Sender's email
-        sender_password = "xrvw orep kxmx zbam"  # Password
-        receiver_email = "sarahesham4321@gmail.com"  # Receiver's email
+        sender_email = ""  # Sender's email
+        sender_password = ""  # Password
+        receiver_email = ""  # Receiver's email
         # Email content
         subject = "Attendance Report"
-        body = "Hi Dr.Amany,Attached is the attendance report for today's lecture."
+        body = "Hi Dr,Attached is the attendance report for today's lecture."
 
         # Setup email using MIME
         msg = MIMEMultipart()
